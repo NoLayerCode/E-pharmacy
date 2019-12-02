@@ -9,6 +9,10 @@ import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
 import { ProductsComponent } from './products/products.component';
 import { SigninComponent } from './users/signin/signin.component';
 import { SignupComponent } from './users/signup/signup.component';
+import { CartComponent } from './products/cart/cart.component';
+import { UsersComponent } from './users/users.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +23,7 @@ import { SignupComponent } from './users/signup/signup.component';
     CartComponent,
     SigninComponent,
     SignupComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,9 +31,6 @@ import { SignupComponent } from './users/signup/signup.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  // const routes: Routes = [
-  //   {path: '', component: UsersComponent }
-  // ]
 
 })
 export class AppModule { }
