@@ -26,3 +26,38 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 # E-pharmacy
+
+
+# to add routing add the routs to the app-routing.module.ts
+# also import the components in app-routing.module.ts
+
+
+import { AdminComponent } from './admin/admin.component';
+import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
+import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
+import { ProductsComponent } from './products/products.component';
+import { SigninComponent } from './users/signin/signin.component';
+import { SignupComponent } from './users/signup/signup.component';
+import { CartComponent } from './products/cart/cart.component';
+import { UsersComponent } from './users/users.component';
+
+
+const routes: Routes = [
+  {path: '', component: UsersComponent },
+    {path: 'user', component:UsersComponent,
+      children:[
+        {path: '', component:SigninComponent},
+        {path: 'signin', component:SigninComponent},
+        {path: 'signup', component:SignupComponent}
+      ] },
+  {path: '', component:ProductsComponent,
+    children: [{ path:'cart', component:CartComponent }]
+  },
+  {path: 'admin', component:AdminComponent,
+    children:[
+      {path: 'products', component:AdminProductsComponent},
+      {path: 'users', component: AdminUsersComponent}
+    ]
+  }
+];
+
