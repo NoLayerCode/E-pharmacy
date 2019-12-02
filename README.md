@@ -1,10 +1,10 @@
 # E-pharmacy
 
-## to add routing add the routs to the app-routing.module.ts
+# to add routing add the routs to the app-routing.module.ts
 
-## also import the components in app-routing.module.ts
+# also import the components in app-routing.module.ts
 
-```json
+```
 import { AdminComponent } from './admin/admin.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
