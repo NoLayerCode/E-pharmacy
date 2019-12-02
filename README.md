@@ -32,17 +32,17 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # also import the components in app-routing.module.ts
 
 
-import { AdminComponent } from './admin/admin.component';
+`import { AdminComponent } from './admin/admin.component';
 import { AdminProductsComponent } from './admin/admin-products/admin-products.component';
 import { AdminUsersComponent } from './admin/admin-users/admin-users.component';
 import { ProductsComponent } from './products/products.component';
 import { SigninComponent } from './users/signin/signin.component';
 import { SignupComponent } from './users/signup/signup.component';
 import { CartComponent } from './products/cart/cart.component';
-import { UsersComponent } from './users/users.component';
+import { UsersComponent } from './users/users.component';`
 
 
-const routes: Routes = [
+`const routes: Routes = [
   {path: '', component: UsersComponent },
     {path: 'user', component:UsersComponent,
       children:[
@@ -59,5 +59,5 @@ const routes: Routes = [
       {path: 'users', component: AdminUsersComponent}
     ]
   }
-];
+];`
 
