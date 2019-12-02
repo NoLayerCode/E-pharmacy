@@ -42,7 +42,8 @@ import { CartComponent } from './products/cart/cart.component';
 import { UsersComponent } from './users/users.component';`
 
 
-`const routes: Routes = [
+```
+const routes: Routes = [
   {path: '', component: UsersComponent },
     {path: 'user', component:UsersComponent,
       children:[
@@ -59,5 +60,6 @@ import { UsersComponent } from './users/users.component';`
       {path: 'users', component: AdminUsersComponent}
     ]
   }
-];`
+];
+```
 
