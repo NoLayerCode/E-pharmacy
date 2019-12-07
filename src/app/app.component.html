@@ -1,21 +1,32 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-	<!-- <div class="container col-sm-12"> -->
-	<div class="row col-sm-12" style="border: 1px solid blue;">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #e3f2fd;">
+	<div class="row col-sm-12">
 		<div class="col-sm-1"></div>
 		<a class="navbar-brand col-sm-1" routerLink="/" routerLinkActive="active">
 			E-pharmacy
 		</a>
-		<div class="col-sm-10"></div>
+		<div class="col-sm-4"></div>
+		<form class="form-inline col-sm-5">
+			<input class="form-control col-sm-10" type="search" placeholder="Search" aria-label="Search">
+			<button class="btn btn-outline-success col-sm-2" type="submit">Search</button>
+		</form>
 	</div>
-	<div class="collapse navbar-collapse row col-sm-12" id="navbarSupportedContent" style="border: 1px solid red;">
-		<!-- <div class="col-sm-1"></div> -->
-		<ul class="navbar-nav mr-auto col-sm-10">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-		</ul>
-		<!-- <div class="col-sm-1"></div> -->
-	</div>
-	<!-- </div> -->
-	<!-- container end -->
 </nav>
+<nav class="nav bg-dark">
+	<div class="row col-sm-12">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<ul class="nav nav-pills">
+				<li class="nav-item">
+					<a class="nav-link active" href="/">Home <span class="sr-only border border-success"></span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/user">User <span class="sr-only">(current)</span></a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+</nav>
+<div class="container">
+	<router-outlet></router-outlet>
+</div>
