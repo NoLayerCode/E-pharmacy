@@ -120,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "E-pharmacy"
+    }
+  },
+  "defaultProject": "E-pharmacy",
+  "cli": {
+    "analytics": "360b021f-2baf-45ba-a131-9f4dfce8cb9c"
+  }
 }
