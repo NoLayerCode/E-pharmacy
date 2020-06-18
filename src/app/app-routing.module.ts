@@ -12,20 +12,24 @@ import { UsersComponent } from './users/users.component';
 
 
 const routes: Routes = [
-  {path: '', component: UsersComponent },
-    {path: 'user', component:UsersComponent,
-      children:[
-        {path: '', component:SigninComponent},
-        {path: 'signin', component:SigninComponent},
-        {path: 'signup', component:SignupComponent}
-      ] },
-  {path: '', component:ProductsComponent,
-    children: [{ path:'cart', component:CartComponent }]
+  { path: '', component: UsersComponent },
+  {
+    path: 'user', component: UsersComponent,
+    children: [
+      { path: '', component: SigninComponent },
+      { path: 'signin', component: SigninComponent },
+      { path: 'signup', component: SignupComponent }
+    ]
   },
-  {path: 'admin', component:AdminComponent,
-    children:[
-      {path: 'products', component:AdminProductsComponent},
-      {path: 'users', component: AdminUsersComponent}
+  {
+    path: '', component: ProductsComponent,
+    children: [{ path: 'cart', component: CartComponent }]
+  },
+  {
+    path: 'admin', component: AdminComponent,
+    children: [
+      { path: 'products', component: AdminProductsComponent },
+      { path: 'users', component: AdminUsersComponent }
     ]
   }
 ];

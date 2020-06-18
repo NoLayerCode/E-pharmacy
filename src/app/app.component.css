@@ -1,0 +1,17 @@
+.nav-menu {
+  color: white;
+  align-content: center;
+}
+
+.logo{
+  padding: 2px;
+}
+
+.footer{
+  align-content: right;
+}
+
+.footer-text{
+
+  font-size: 1rem;
+}
